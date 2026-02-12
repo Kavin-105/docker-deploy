@@ -1,0 +1,21 @@
+My system:
+docker build -t (my-website) .
+docker run -d -p <host-port>:<container-port> (my-website)
+docker images
+docker login
+docker tag <local-image> <dockerhub-username>/<repository>:<tag>
+docker push <dockerhub-username>/<repository>:<tag>
+
+docker stop container-id
+docker start container-id
+docker restart container-id
+
+docker rm container-id
+docker rm -f container-id
+
+docker container prune
+
+Other system:
+docker pull <username>/<repository>:<tag>
+docker run -d -p <host-port>:<container-port> <username>/<repository>:<tag>
+
